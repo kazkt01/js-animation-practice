@@ -1,0 +1,13 @@
+@charset "utf-8";
+@use "common" as *;
+@use "header" as *;
+@use "footer" as *;
+@use "hero" as *;
+@use "jsAnimation" as *;
+@use "main" as *;
+
+// @use "jsAnimation" as *; // * → C と名前をつけることができる。
+// 例えば、
+// h1 {
+//   background: c.$cBlue;　みたいなことができる。
+// }

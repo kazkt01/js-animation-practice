@@ -1,0 +1,68 @@
+//  header
+//////////////////////////
+
+.header {
+  position: fixed;
+  z-index: 10px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  //   background: #ffffff3a;
+  align-items: center;
+  background: #fff;
+}
+
+.nav-box {
+  display: flex;
+}
+
+.logo-img {
+  object-fit: cover;
+  width: 200px;
+  height: 70px;
+  // タブレット
+  @media screen and (max-width: 768px) {
+    width: 200px;
+    height: 70px;
+  }
+  //   モバイル（L）
+  @media screen and (max-width: 425px) {
+    width: 100px;
+    height: 50px;
+  }
+  //    モバイル（S）
+  @media screen and (max-width: 320px) {
+    width: 100px;
+    height: 50px;
+  }
+}
+
+ul {
+  display: flex;
+  margin-right: 20px;
+}
+
+a {
+  padding: 20px;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  padding-bottom: 0.5em;
+  // タブレット
+  @media screen and (max-width: 667px) {
+    display: none;
+  }
+  //   モバイル（L）
+  @media screen and (max-width: 425px) {
+    display: none;
+  }
+  //    モバイル（S）
+  @media screen and (max-width: 320px) {
+  }
+
+  &:hover {
+    border-bottom: 1px solid #333;
+  }
+}

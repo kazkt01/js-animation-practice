@@ -1,0 +1,225 @@
+.section-box {
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+
+body {
+  color: #333;
+  font-family: "Noto Sans JP", sans-serif;
+  background: #ffffff;
+}
+
+.header {
+  position: fixed;
+  z-index: 10px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+}
+
+.nav-box {
+  display: flex;
+}
+
+.logo-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 200px;
+  height: 70px;
+}
+@media screen and (max-width: 768px) {
+  .logo-img {
+    width: 200px;
+    height: 70px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .logo-img {
+    width: 100px;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .logo-img {
+    width: 100px;
+    height: 50px;
+  }
+}
+
+ul {
+  display: flex;
+  margin-right: 20px;
+}
+
+a {
+  padding: 20px;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  padding-bottom: 0.5em;
+}
+@media screen and (max-width: 667px) {
+  a {
+    display: none;
+  }
+}
+@media screen and (max-width: 425px) {
+  a {
+    display: none;
+  }
+}
+a:hover {
+  border-bottom: 1px solid #333;
+}
+
+.footer {
+  width: 100%;
+  height: 300px;
+  background: #a3a3a3;
+  text-align: center;
+}
+
+small {
+  color: #d3d3d3;
+}
+
+.video {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 0;
+  left: 0;
+}
+@media screen and (max-width: 768px) {
+  .video {
+    width: 100%;
+    height: 500px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .video {
+    width: 100%;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .video {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+.catch {
+  position: absolute;
+  top: 20%;
+  left: 0.5em;
+  color: #ffffff;
+  text-shadow: 1px 1px 1px #000;
+  font-size: 80px;
+  font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  .catch {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .catch {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .catch {
+    font-size: 20px;
+  }
+}
+
+.fireA {
+  color: red;
+}
+
+.a-img {
+  width: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+  transition: all 1s;
+}
+.a-img.fire {
+  animation: fadeUp 3s forwards;
+}
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.b-box {
+  text-align: center;
+}
+
+.b-fig {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0 10px;
+}
+
+.b-img {
+  width: 350px;
+  border-radius: 40px;
+  margin-left: 20px;
+}
+
+.b-caption-box {
+  text-align: left;
+  margin: 20px;
+}
+
+.c-box {
+  text-align: center;
+}
+
+.c-fig {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0 10px;
+  padding-top: 50px;
+}
+
+.c-img {
+  width: 350px;
+  border-radius: 40px;
+  margin-left: 20px;
+}
+
+.c-caption-box {
+  text-align: left;
+  margin: 20px;
+}
+
+.m-box {
+  display: flex;
+}
+
+.m-img {
+  width: 200px;
+}/*# sourceMappingURL=home.css.map */
