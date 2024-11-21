@@ -1,7 +1,25 @@
+@charset "UTF-8";
 .section-box {
   text-align: center;
   width: 100%;
   height: auto;
+}
+
+.section-title {
+  font-weight: bold;
+}
+.section-title.fire {
+  animation: textAnimation 1.5s ease-in-out forwards;
+}
+@keyframes textAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 body {
@@ -140,7 +158,20 @@ small {
     font-size: 20px;
   }
 }
+.catch.fire2 {
+  animation: textAnimation 1.5s ease-in-out forwards;
+}
 
+@keyframes textAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .fireA {
   color: red;
 }
@@ -150,19 +181,23 @@ small {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 20px;
+  opacity: 0; /* 初期状態で非表示 */
+  transform: translateY(30px); /* 初期位置を少し下に */
   transition: all 1s;
 }
 .a-img.fire {
+  opacity: 1; /* .fire が付与されたときに表示 */
+  transform: translateY(0); /* 元の位置に戻す */
   animation: fadeUp 3s forwards;
 }
 @keyframes fadeUp {
   0% {
     opacity: 0;
-    transform: translateY(0);
+    transform: translateY(30px); /* 少し下から */
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0); /* 元の位置に戻る */
   }
 }
 
@@ -183,6 +218,19 @@ small {
   width: 350px;
   border-radius: 40px;
   margin-left: 20px;
+}
+.b-img.fire {
+  animation: textAnimation 1.5s ease-in-out forwards;
+}
+@keyframes textAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .b-caption-box {
@@ -209,6 +257,19 @@ small {
   width: 350px;
   border-radius: 40px;
   margin-left: 20px;
+}
+.c-img.fire {
+  animation: textAnimation 1.5s ease-in-out forwards;
+}
+@keyframes textAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .c-caption-box {

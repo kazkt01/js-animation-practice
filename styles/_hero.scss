@@ -42,4 +42,21 @@
   @media screen and (max-width: 320px) {
     font-size: 20px;
   }
+
+  &.fire2 {
+    // ここにテキストアニメーションを入れたい
+    animation: textAnimation 1.5s ease-in-out forwards;
+  }
+}
+
+// テキストアニメーションのキー
+@keyframes textAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
