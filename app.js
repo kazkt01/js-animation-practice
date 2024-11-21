@@ -42,7 +42,6 @@ const cd2 = function (entries, observer) {
     }
   });
 };
-
 // IntersectionObserverを利用する例
 const io2 = new IntersectionObserver(cd2);
 io2.observe(hoge); // 修正：単一要素であるため問題なし

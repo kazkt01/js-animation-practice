@@ -1,4 +1,10 @@
 @charset "UTF-8";
+.w-lapper {
+  overflow: hidden;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .section-box {
   text-align: center;
   width: 100%;
@@ -220,16 +226,18 @@ small {
   margin-left: 20px;
 }
 .b-img.fire {
-  animation: textAnimation 1.5s ease-in-out forwards;
+  opacity: 1; /* .fire が付与されたときに表示 */
+  transform: translateY(0); /* 元の位置に戻す */
+  animation: fadeUp 4s forwards;
 }
-@keyframes textAnimation {
+@keyframes fadeUp {
   0% {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(30px); /* 少し下から */
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0); /* 元の位置に戻る */
   }
 }
 
@@ -259,16 +267,18 @@ small {
   margin-left: 20px;
 }
 .c-img.fire {
-  animation: textAnimation 1.5s ease-in-out forwards;
+  opacity: 1; /* .fire が付与されたときに表示 */
+  transform: translateY(0); /* 元の位置に戻す */
+  animation: fadeUp 5s forwards;
 }
-@keyframes textAnimation {
+@keyframes fadeUp {
   0% {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(30px); /* 少し下から */
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0); /* 元の位置に戻る */
   }
 }
 
