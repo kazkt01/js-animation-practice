@@ -37,11 +37,11 @@
         </div>
         <nav class="nav-box">
           <ul>
-            <li><a href="">About</a></li>
-            <li><a href="">Buisiness</a></li>
-            <li><a href="">Story</a></li>
-            <li><a href="">Join</a></li>
-            <li><a href="">contact</a></li>
+            <li><a class="header-link" href="">About</a></li>
+            <li><a class="header-link" href="">Mission</a></li>
+            <li><a class="header-link" href="">Buisiness</a></li>
+            <li><a class="header-link" href="">Join</a></li>
+            <li><a class="header-link" href="">contact</a></li>
           </ul>
         </nav>
       </header>
@@ -85,52 +85,21 @@
               </figcaption>
             </figure>
           </div>
-          <!-- 2nd -->
-          <div class="b-box">
-            <figure class="b-fig">
-              <img class="b-img" src="./assets/grass.jpg" alt="" />
-              <figcaption class="b-caption-box">
-                <h2 class="b-title">どこにいても、だれにでも。</h2>
-                <p class="b-caption">
-                  場所や時間に縛られず、自由に学べる環境を提供していきたい
-                </p>
-              </figcaption>
-            </figure>
-          </div>
-          <!-- c-box -->
-          <div class="c-box">
-            <figure class="c-fig">
-              <img class="c-img" src="./assets/kids.jpg" alt="" />
-              <figcaption class="c-caption-box">
-                <h2 class="c-title">笑顔を世界へ</h2>
-                <p class="c-caption">世界中に笑顔を届けたい</p>
-              </figcaption>
-            </figure>
-          </div>
         </div>
       </section>
 
+      <section class="section-box">
+        <h1 class="section-title">Mission</h1>
+        <div>kakakak</div>
+      </section>
+
+      <!-- 横スクロールアニメーション -->
       <section class="section-box">
         <h1 class="section-title">Member</h1>
         <div class="m-box">
           <figure>
             <img class="m-img" src="./assets/humanC.jpg" alt="" />
           </figure>
-          <!-- <figure>
-          <img class="m-img" src="./assets/humanC.jpg" alt="" />
-        </figure>
-        <figure>
-          <img class="m-img" src="./assets/humanC.jpg" alt="" />
-        </figure>
-        <figure>
-          <img class="m-img" src="./assets/humanC.jpg" alt="" />
-        </figure>
-        <figure>
-          <img class="m-img" src="./assets/humanC.jpg" alt="" />
-        </figure>
-        <figure>
-          <img class="m-img" src="./assets/humanC.jpg" alt="" />
-        </figure> -->
         </div>
       </section>
 
@@ -173,8 +142,32 @@
 
     <div></div>
 
-    <script src="./app.js"></script>
-
+    <!-- ライブラリ使わず実装 -->
+    <!-- <script src="./app.js"></script> -->
+    <!--  -->
+    <!-- ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      ScrollReveal({
+        reset: true,
+        distance: "60px",
+        duration: 2000,
+        delay: 200,
+      });
+      //鬼簡単に実装できておもしろ
+      // ScrollReveal().reveal(".header-link", { delay: 200, origin: "buttom" });
+      // ScrollReveal().reveal(".logo-img", { delay: 200, origin: "left" });
+      ScrollReveal().reveal(".catch", { delay: 200, origin: "left" });
+      ScrollReveal().reveal(".b-img", { delay: 200, origin: "left" });
+      ScrollReveal().reveal(".b-title", { delay: 200, origin: "left" });
+      ScrollReveal().reveal(".c-img", { delay: 200, origin: "right" });
+      ScrollReveal().reveal(".c-title", { delay: 200, origin: "right" });
+      ScrollReveal().reveal(".section-title", { delay: 200 });
+      ScrollReveal().reveal(".c-caption", { delay: 200 });
+      ScrollReveal().reveal(".b-caption", { delay: 200 });
+      ScrollReveal().reveal(".b-caption", { delay: 200 });
+    </script>
+    <!--  -->
     <!-- Gsap  CDN-->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
   </body>

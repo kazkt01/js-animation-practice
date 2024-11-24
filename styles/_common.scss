@@ -34,5 +34,7 @@
 body {
   color: #333;
   font-family: "Noto Sans JP", sans-serif;
-  background: #ffffff;
+  background: linear-gradient(rgb(255, 255, 248), rgb(255, 255, 255));
 }
+
+// bgでliner-gradiantというプロパティでグラデーションを表現できる。

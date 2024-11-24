@@ -3,7 +3,7 @@ const children = document.querySelectorAll(
   ".a-img, .c-img , .b-img , .section-title"
 );
 
-// コールバック関数
+// コールバック関数 ←ふかぼろう
 const cb = function (entries, observer) {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -11,7 +11,7 @@ const cb = function (entries, observer) {
       entry.target.classList.add("fire");
     } else {
       console.log("out view");
-      // entry.target.classList.remove("fire");
+      entry.target.classList.remove("fire");
     }
   });
 };

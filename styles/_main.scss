@@ -24,23 +24,18 @@
   }
 }
 
-.b-box {
-  text-align: center;
-}
-
 .b-fig {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   width: 100%;
   height: auto;
-  padding: 0;
   margin: 0 10px;
 }
 
 .b-img {
-  width: 350px;
+  width: 500px;
   border-radius: 40px;
-  margin-left: 20px;
+  margin-left: 120px;
   &.fire {
     opacity: 1; /* .fire が付与されたときに表示 */
     transform: translateY(0); /* 元の位置に戻す */
@@ -71,18 +66,17 @@
 .c-fig {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: center;
+  justify-content: right;
   width: 100%;
   height: auto;
-  padding: 0;
   margin: 0 10px;
   padding-top: 50px;
 }
 
 .c-img {
-  width: 350px;
+  width: 500px;
   border-radius: 40px;
-  margin-left: 20px;
+  margin-right: 120px;
   &.fire {
     opacity: 1; /* .fire が付与されたときに表示 */
     transform: translateY(0); /* 元の位置に戻す */
@@ -108,6 +102,8 @@
 
 .m-box {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .m-img {

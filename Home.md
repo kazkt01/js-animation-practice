@@ -11,3 +11,21 @@ Gsap を使ったやり方が主流とのこと。
 
 スクロールでふんわりアニメーションは、
 単純にクラス付けはずしではダメっぽい？
+
+ScrollReveal ← これライブラリ
+
+ライブラリ使っって開発するのは簡単だが
+JavaScript への理解度は、あまり上がらない気がする。
+https://dubdesign.net/download/html-css/javascript-scrollreveal/
+
+<!--
+ ///////////////////-->
+
+shincode-js-animation-tutorials
+https://youtu.be/Wt19KoskUAM?si=aAv9QyMpwv3zMKwc
+
+shincode-tukaesouna-waza-cool
+https://youtu.be/KLQA8TCC1iU?si=ir7EhYg1Dia3mfU7
+
+<!--
+//////////////////////// -->
