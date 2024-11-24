@@ -18,6 +18,14 @@ ScrollReveal ← これライブラリ
 JavaScript への理解度は、あまり上がらない気がする。
 https://dubdesign.net/download/html-css/javascript-scrollreveal/
 
+⇧
+React でしようするときは？
+https://qiita.com/kome13j/items/20fc6ea869586e8122dc
+
+useRef を活用する？
+useRef とは？
+https://qiita.com/cheez921/items/9a5659f4b94662b4fd1e
+
 <!--
  ///////////////////-->
 

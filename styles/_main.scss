@@ -2,9 +2,9 @@
   width: 400px;
   object-fit: cover;
   border-radius: 20px;
-  opacity: 0; /* 初期状態で非表示 */
-  transform: translateY(30px); /* 初期位置を少し下に */
-  transition: all 1s;
+  // // opacity: 0; /* 初期状態で非表示 */  //←これが重要なポイント
+  // transform: translateY(30px); /* 初期位置を少し下に */
+  // transition: all 1s;
 
   &.fire {
     opacity: 1; /* .fire が付与されたときに表示 */
